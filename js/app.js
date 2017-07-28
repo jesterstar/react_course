@@ -2,10 +2,42 @@
  * Created by Jesster on 15.06.2017.
  */
 
-console.log(React);
-console.log(ReactDOM);
+//Comment wrap
+var Comments = React.createClass({
+    render: function(){
+        return (
+            <div className="comments">
+                Нет новостей - комментировать нечего.
+            </div>
+        );
+    }
+});
+
+//News wrap
+var News = React.createClass({
+    render: function() {
+        return (
+            <div className="news">
+                К сожалению, новостей нет.
+            </div>
+        );
+    }
+});
+
+//Main wrap for project
+var App = React.createClass({
+    render: function() {
+        return (
+            <div className="app">
+                Всем привет, я компонент App!
+                <News />
+                <Comments />
+            </div>
+        );
+    }
+});
 
 ReactDOM.render(
-    <h1>Hello, world!</h1>,
+    <App />,
     document.getElementById('root')
 );
