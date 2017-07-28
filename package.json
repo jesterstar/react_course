@@ -1,7 +1,7 @@
 {
-  "name": "react-ru-tutorial",
+  "name": "redux-ru-tutorial",
   "version": "1.0.0",
-  "description": "React RU tutorial",
+  "description": "Redux RU tutorial",
   "main": "index.html",
   "scripts": {
     "start": "node server.js"
@@ -9,6 +9,6 @@
   "author": "Sergey Glazov",
   "license": "MIT",
   "devDependencies": {
-    "express": "^4.15.3"
+    "express": "^4.13.4"
   }
 }
