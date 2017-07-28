@@ -43,7 +43,7 @@ var Article = React.createClass({
 
     return (
         <div className='article'>
-          <p className='news__author'>{author}:</p>
+          <p className='news__author'>{author}</p>
           <p className='news__text'>{text}</p>
           <a href="#"
              onClick={this.readmoreClick}
@@ -89,7 +89,7 @@ var App = React.createClass({
   render: function() {
     return (
       <div className="app">
-        <h3>Нововсти</h3>
+        <h3>Новости</h3>
         <News data={my_news}/>
       </div>
     );
